@@ -1,6 +1,6 @@
 {
   "name": "jest-stylus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "description": "Stylus serializer for jest snapshots.",
   "author": "Alan Souza",

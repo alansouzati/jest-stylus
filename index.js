@@ -35,7 +35,7 @@ const filterRule = (classes, rule) => {
 };
 /* eslint-enable no-param-reassign */
 
-export default paths => paths && paths.length && expect.addSnapshotSerializer({
+module.exports = paths => paths && paths.length && expect.addSnapshotSerializer({
   test(val) {
     return val && !val[KEY] && (val.getAttribute || val.$$typeof === Symbol.for('react.test.json'));
   },

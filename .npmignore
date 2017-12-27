@@ -4,3 +4,6 @@ __tests__
 .eslintrc
 .travis.yml
 .yarn.lock
+.babelrc
+coverage
+yarn.lock
