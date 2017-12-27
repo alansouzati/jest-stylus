@@ -1,6 +1,6 @@
-import stylus from 'stylus';
-import path from 'path';
-import css from 'css';
+const stylus = require('stylus');
+const path = require('path');
+const css = require('css');
 
 const KEY = '__jest-stylus__';
 
