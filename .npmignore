@@ -1,0 +1,6 @@
+__tests__
+.editorconfig
+.eslintignore
+.eslintrc
+.travis.yml
+.yarn.lock

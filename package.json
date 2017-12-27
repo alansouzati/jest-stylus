@@ -1,0 +1,56 @@
+{
+  "name": "jest-stylus",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Stylus serializer for jest snapshots.",
+  "author": "Alan Souza",
+  "bugs": "https://github.com/alansouzati/jest-stylus/issues",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alansouzati/jest-stylus.git"
+  },
+  "peerDependencies": {
+    "stylus": ">=0.54.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^20.0.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jest-cli": "^21.0.1",
+    "pre-commit": "^1.2.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "stylus": "^0.54.5"
+  },
+  "dependencies": {
+    "css": "^2.2.1"
+  },
+  "scripts": {
+    "check": "npm run lint && npm run test",
+    "lint": "eslint .",
+    "test": "jest",
+    "test-update": "jest -u"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ]
+  },
+  "pre-commit": [
+    "check"
+  ]
+}

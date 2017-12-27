@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enzyme fails with invalid style 2`] = `
+[ParseError: /Users/asouza/opensource-workspace/jest-stylus/__tests__/index-invalid.styl:3:2
+   1| test
+   2|   color #000
+   3| }
+-------^
+   4| 
+
+unexpected "}"
+]
+`;
+
+exports[`enzyme mounts with style 1`] = `
+.test {
+  background: #00f;
+}
+
+.test3 {
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 480px) {
+  .test {
+    font-size: 20px;
+  }
+}
+
+<div
+  class="test test2"
+>
+  <div
+    class="test3"
+  >
+    children
+  </div>
+  test style
+</div>
+`;
+
+exports[`enzyme mounts with styles 1`] = `
+.test {
+  background: #00f;
+}
+
+@media screen and (min-width: 480px) {
+  .test {
+    font-size: 20px;
+  }
+}
+
+div.test2 {
+  color: #000;
+}
+
+<div
+  class="test test2"
+>
+  test styles
+</div>
+`;
+
+exports[`enzyme mounts without style 1`] = `
+<div>
+  test no style
+</div>
+`;
+
+exports[`react renders style 1`] = `
+.test {
+  background: #00f;
+}
+
+@media screen and (min-width: 480px) {
+  .test {
+    font-size: 20px;
+  }
+}
+
+<div
+  className="test test2"
+>
+  test react with style
+</div>
+`;
+
+exports[`react renders without style 1`] = `
+<div>
+  test react no style
+</div>
+`;
