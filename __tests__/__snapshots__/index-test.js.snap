@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`enzyme fails with invalid style 2`] = `
-[ParseError: /Users/asouza/opensource-workspace/jest-stylus/__tests__/index-invalid.styl:3:2
-   1| test
-   2|   color #000
-   3| }
--------^
-   4| 
-
-unexpected "}"
-]
-`;
-
 exports[`enzyme mounts with style 1`] = `
 .test {
   background: #00f;

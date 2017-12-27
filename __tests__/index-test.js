@@ -41,7 +41,7 @@ test('enzyme fails with invalid style', () => {
     expect(component.getDOMNode()).toMatchSnapshot();
     fail('should not allow invalid style');
   } catch (e) {
-    expect(e).toMatchSnapshot();
+    expect(e).toBeDefined();
   }
 });
 
